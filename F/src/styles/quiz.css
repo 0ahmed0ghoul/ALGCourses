@@ -1,0 +1,47 @@
+.flex-nowrap {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 1rem; /* Consistent spacing between cards */
+    padding-bottom: 1rem; /* Add padding for visuals */
+  }
+  
+  .quiz-card {
+    flex: 0 0 auto;
+    width: 250px; /* Adjust width to match courses */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+  }
+  
+  .quiz-card-img {
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .quiz-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quiz-card-description {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .quiz-card .btn {
+    margin-top: auto;
+    background-color: #28a745; /* Green button for quiz */
+    border: none;
+    color: white;
+    font-weight: 600;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-card .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

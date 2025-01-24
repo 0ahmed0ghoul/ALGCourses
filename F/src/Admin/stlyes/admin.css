@@ -1,0 +1,60 @@
+.tabs {
+    padding-left: 15px;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items:end ;
+    border-bottom: 3px solid grey;
+
+  }
+  
+  button {
+    width: 200px;
+    height: 80px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  
+  button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .dashboard-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .dashboard-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #009879, #007bff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

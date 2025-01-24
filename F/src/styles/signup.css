@@ -1,0 +1,21 @@
+/* Add this CSS to your styles or App.css for background */
+body {
+    background-color: #f7f7f7; /* Light gray background for the entire page */
+  }
+  
+  .container, .my-5{
+    background: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin-top: 300px;
+  }
+.my-5{
+  margin-top: 100px;
+}
+  
+  /* For mobile responsiveness, ensure the form adapts nicely */
+  @media (max-width: 576px) {
+    .container {
+      padding: 20px;
+    }
+  }

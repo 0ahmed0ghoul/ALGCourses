@@ -1,0 +1,59 @@
+.flex-nowrap {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 1rem; /* Consistent spacing between cards */
+  padding-bottom: 1rem; /* Add some padding for better visuals */
+}
+
+.course-display-container {
+  display: flex;
+  overflow-x: auto;
+}
+
+.course-card {
+  flex: 0 0 auto;
+  width: 250px; /* Adjust width as needed */
+  margin-right: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+.course-card img {
+  height: 140px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.course-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.course-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.course-card .card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.course-card .btn {
+  margin-top: auto;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.course-card .btn:hover {
+  background-color: #0056b3;
+}
+

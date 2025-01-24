@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portfolio</title>
+    <link rel="stylesheet" href="/styles/teacher.css">
+</head>
+<body>
+
+    <%- include('navbar', { name: name, teacherInfoFilled: teacherInfoFilled }) %>
+    <header>
+    <h1>Teacher Portfolio</h1>
+</header>
+<div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+        <img id="profileImage" src="https://via.placeholder.com/120" alt="Profile Picture">
+        <h1 id="teacherName"><%= firstName %> <%= lastName %>  </h1>
+        <h2 id="teacherField"><%= field %> Teacher</h2>
+    </div>
+
+    <!-- Teacher Information Section -->
+    <div class="info-section">
+        <h2>About Me</h2> 
+
+        <p><strong>ID:</strong> <span id="teacherDob"><%= teacherId %></span></p>
+        <p><strong>Date of Birth:</strong> <span id="teacherDob"><%= dob %></span></p>
+
+        <p><strong>Country:</strong> <span id="teacherCountry"><%= country %></span></p>
+        <p><strong>Grade:</strong> <span id="teacherGrade"><%= grade %></span></p>
+    </div>
+    <div class="btn-div">
+    <button type="submit" class="btn"><a href="/teacher/create-course">Add Course</a></button>
+    </div>
+    <!-- Published Courses Section -->
+    <div class="course-section">
+        <h2>Published Courses</h2>
+        <ul id="courseList">
+            <!-- Dynamically populated course list -->
+        </ul>
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

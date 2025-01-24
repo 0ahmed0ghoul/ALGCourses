@@ -1,0 +1,109 @@
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: 'Arial, sans-serif';
+    text-align: left;
+    table-layout: fixed; /* Ensures equal cell width */
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center; /* Centers text in cells */
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.delete-btn, .edit-btn {
+    font-size: 20px;
+    width: 100px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Delete Button Specific Styles */
+.delete-btn {
+    background-color: #ff4d4f;
+    color: white;
+    margin: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #ff7875;
+    transform: scale(1.05);
+}
+
+/* Edit Button Specific Styles */
+.edit-btn {
+    background-color: #1890ff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #40a9ff;
+    transform: scale(1.05);
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.add-teacher-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-teacher-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.add-teacher-btn:active {
+    background-color: #009879;
+    transform: scale(1);
+}
+
+.add-teacher-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
+}

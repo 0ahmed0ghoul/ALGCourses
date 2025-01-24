@@ -1,0 +1,203 @@
+/* Ensure the navbar and its container take up the full width */
+.navbar {
+    width: 100%;
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030; /* Ensure it's above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+  }
+  
+  /* Make sure the container inside the navbar takes up full width */
+  .container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Basic Navbar Styling */
+  .navbar-light .navbar-nav .nav-link {
+    color: #555;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #007bff;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  /* Custom Navbar Styling */
+  .custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .custom-navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-navbar .logo img {
+    height: 40px;
+    margin-right: 5px;
+  }
+  
+  /* Search Bar Styling */
+  .custom-navbar .search-bar {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #f7f9fa;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  
+  .custom-navbar .search-bar input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  .custom-navbar .search-bar input:focus {
+    outline: none;
+  }
+  
+  .custom-navbar .search-bar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Actions Styling (Buttons and Links) */
+  .custom-navbar .actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .custom-navbar .actions button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .custom-navbar .actions button:hover {
+    color: #007BFF;
+  }
+  
+  .custom-navbar .actions .sign-up {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .custom-navbar .actions .log-in {
+    background-color: #f8f9fa;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  
+  .custom-navbar .actions .languageButton {
+    background-color: transparent;
+  }
+  
+  /* Navbar Link Hover Effects */
+  .navbar-nav .nav-link.active {
+    color: #007bff;
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    color: #007bff;
+  }
+  
+  /* Ensure navbar is always on top */
+  .custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050; /* Ensures the navbar is on top */
+  }
+
+ /* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f5;
+  border-radius: 25px;
+  width: 300px; /* Adjust width as needed */
+  margin-right: 15px; /* Optional margin for spacing */
+}
+
+/* Search Button */
+.search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px; /* Spacing between icon and input */
+}
+
+.search-btn .search-icon {
+  width: 20px; /* Adjust the size of the search icon */
+  height: 20px;
+}
+
+/* Search Input Styling */
+.search-input {
+  border: none;
+  padding: 8px 15px;
+  width: 100%;
+  height: 40px; /* Make the input the same height as the search bar */
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add subtle shadow on focus */
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #333; /* Dark color for the hamburger icon */
+  border-radius: 5px;
+}
+
+/* Optional: Navbar Toggle Hover Effect */
+.navbar-toggler:hover .navbar-toggler-icon {
+  background-color: #007bff; /* Color change on hover */
+}

@@ -1,0 +1,36 @@
+.card {
+  border-radius: 10px;
+  width: 90%;
+  height: fit-content;
+}
+
+.card-footer {
+  background-color: #e9ecef;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.btn-info {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+.container{
+  width: 1000px;
+  margin-top: 450px;
+}
+.teacher_job button{
+  width: fit-content;
+}
+
